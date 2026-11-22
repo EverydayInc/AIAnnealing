@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://every.day/schemas/annealing-pareto/pareto-verdict-v1.json",
+  "title": "Pareto verdict",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "operation_id", "after_round", "classification", "control_domain", "verdict", "material_movement", "new_evidence", "dry_strike", "consecutive_dry_strikes", "expected_next_movement", "unresolved_conditions", "duty_bound_obligations", "prohibited_next_actions", "qualified_human_role", "reason", "restart_seam"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "operation_id": {"type": "string", "minLength": 1},
+    "after_round": {"type": "integer", "minimum": 0},
+    "classification": {"enum": ["ordinary", "duty_bound"]},
+    "control_domain": {"enum": ["none", "legal", "financial", "medical", "regulatory", "safety", "security", "privacy", "other"]},
+    "verdict": {"enum": ["continue", "human_return", "control_stop"]},
+    "material_movement": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "new_evidence": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "dry_strike": {"type": "boolean"},
+    "consecutive_dry_strikes": {"type": "integer", "minimum": 0},
+    "expected_next_movement": {"type": "array", "items": {"enum": ["decision", "boundary", "dependency", "assumption", "evidence", "risk-control", "sequence", "verification"]}},
+    "unresolved_conditions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "duty_bound_obligations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "prohibited_next_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "qualified_human_role": {"type": "string"},
+    "reason": {"type": "string", "minLength": 1},
+    "restart_seam": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"classification": {"const": "duty_bound"}}, "required": ["classification"]},
+      "then": {
+        "properties": {
+          "control_domain": {"not": {"const": "none"}},
+          "verdict": {"const": "control_stop"},
+          "duty_bound_obligations": {"minItems": 1},
+          "prohibited_next_actions": {"minItems": 1},
+          "qualified_human_role": {"minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"verdict": {"const": "continue"}}, "required": ["verdict"]},
+      "then": {"properties": {"expected_next_movement": {"minItems": 1}}}
+    }
+  ]
+}

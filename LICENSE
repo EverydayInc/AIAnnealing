@@ -1,0 +1,90 @@
+# Everyday Community License — Annealing + Pareto Toolkit v1.0
+
+Copyright 2026 Everyday Inc
+Original Author: Todd Beckett
+
+This license governs the Annealing + Pareto Toolkit (the **License**).
+
+## 1. Definitions
+
+1. **Owner** means Everyday Inc.
+2. **Author** means Todd Beckett.
+3. **Toolkit** means the Annealing + Pareto Toolkit, including its methods, documentation, prompts, agent and skill definitions, schemas, scripts, tests, fixtures, archives, and later versions that the Owner distributes under this License.
+4. **Recipient** means a person or legal entity that receives or uses the Toolkit.
+5. **Derivative Work** means a modification, adaptation, translation, fork, or other work based on the Toolkit.
+6. **Toolkit Offering** means a product or service in which access to, hosted execution of, licensing of, or distribution of the Toolkit or a Derivative Work is the primary commercial value. A Toolkit Offering does not include Permitted Commercial Use under section 3.
+
+## 2. General grant
+
+Subject to this License, the Owner grants each Recipient a worldwide, non-exclusive, no-charge, royalty-free license to:
+
+1. use, copy, reproduce, study, test, modify, merge, publish, and distribute the Toolkit;
+2. create and distribute Derivative Works;
+3. teach the Toolkit and provide paid or unpaid training about it;
+4. use the Toolkit in paid consulting or other professional services;
+5. use the Toolkit internally for commercial or noncommercial purposes;
+6. include the Toolkit in a product or service when the Toolkit is not the primary commercial value of that product or service; and
+7. permit other persons to exercise these rights on the Recipient's behalf.
+
+The Owner intends this grant to let people pick up the Toolkit, improve it, share it, and use it in real work.
+
+## 3. Permitted Commercial Use
+
+A Recipient may, without a separate commercial license:
+
+1. charge for time, expertise, analysis, implementation, support, training, or consulting that uses the Toolkit;
+2. use the Toolkit within an organization;
+3. include the Toolkit as a non-primary component of a broader commercial product or service; and
+4. distribute the Toolkit or a Derivative Work without charge.
+
+A use remains permitted when the Recipient earns money from work performed with the Toolkit. The restriction in section 4 applies when the Toolkit itself is the primary product or service sold.
+
+## 4. Toolkit Offering restriction
+
+A Recipient must obtain a separate written commercial license from the Owner before the Recipient offers a Toolkit Offering, including when the Recipient:
+
+1. sells copies of the Toolkit or a Derivative Work as the primary product;
+2. charges a fee primarily for access to or use of the Toolkit or a Derivative Work;
+3. offers the Toolkit or a Derivative Work as the primary function of a paid hosted service, software-as-a-service product, managed service, or commercial agent service; or
+4. sublicenses the Toolkit or a Derivative Work for a fee when the Toolkit itself is the primary subject of the sublicense.
+
+Incidental use does not create a Toolkit Offering. The Owner will consider the offering's stated purpose, principal functionality, customer reason for purchase, and source of commercial value.
+
+## 5. Notices and attribution
+
+A Recipient that distributes the Toolkit or a Derivative Work must:
+
+1. include this complete License;
+2. retain the copyright notice and the identification of the Author;
+3. state prominently which files or parts the Recipient changed; and
+4. state that the Owner and Author do not endorse the Recipient or the Recipient's work unless they gave written consent.
+
+A Recipient may use the names **Everyday Inc**, **Todd Beckett**, and **Annealing + Pareto Toolkit** only to provide accurate attribution or describe origin. This License grants no trademark rights.
+
+## 6. Contributions
+
+A contribution is not transferred to the Owner merely because a Recipient publishes it. A separate contribution agreement or other written grant governs material submitted for incorporation into the Owner's official Toolkit.
+
+## 7. No professional assurance
+
+The Toolkit is an experimental reasoning and coordination method. It does not establish legal sufficiency, financial approval, clinical correctness, regulatory compliance, safety assurance, security acceptance, privacy compliance, or completion of another duty-bound obligation.
+
+## 8. Disclaimer of warranty
+
+THE TOOLKIT IS PROVIDED **AS IS**, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR FITNESS FOR PROFESSIONAL OR SAFETY-CRITICAL USE. EACH RECIPIENT IS RESPONSIBLE FOR DETERMINING WHETHER A USE IS APPROPRIATE.
+
+## 9. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER AND AUTHOR WILL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE TOOLKIT OR ITS USE, WHETHER IN CONTRACT, TORT, OR OTHERWISE.
+
+## 10. Termination
+
+1. A Recipient's rights terminate automatically when the Recipient materially violates this License.
+2. The rights are reinstated when the Recipient cures the violation within 30 days after discovery, unless the Owner gives written notice that the violation cannot be cured.
+3. Sections 5, 7, 8, 9, and 11 survive termination.
+
+## 11. Entire public license
+
+This License states the public rights for the Toolkit. A separate written agreement may grant additional rights. The `AUTHOR-RIGHTS-AGREEMENT.md` file records a proposed bilateral grant between the Owner and Author. It is not effective unless both parties sign it.
+
+This License is source-available. It is not the MIT License, the Apache License, or an Open Source Initiative-approved license.

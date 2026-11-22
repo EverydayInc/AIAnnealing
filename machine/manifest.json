@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "package": "annealing-pareto-v01",
+  "version": "1.0.1",
+  "prepared": "2026-11-22",
+  "owner": "Everyday Inc",
+  "original_author": "Todd Beckett",
+  "license": "Everyday Community License \u2014 Annealing + Pareto Toolkit v1.0",
+  "author_rights_agreement_status": "proposed; requires Owner and Author signatures",
+  "status": "evaluation package",
+  "entrypoints": {
+    "human": "README.md",
+    "license": "LICENSE",
+    "author_rights_agreement": "AUTHOR-RIGHTS-AGREEMENT.md",
+    "quickstart": "QUICKSTART.md",
+    "skill": "skill/annealing-pareto/SKILL.md",
+    "pareto_agent": "agents/PARETO.md",
+    "validator": "scripts/validate_package.py",
+    "evaluator": "scripts/evaluate_run.py",
+    "installer": "scripts/install.py"
+  },
+  "fixtures": [
+    "examples/positive-long-tail",
+    "examples/safety-control-stop"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 23,
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b"
+    },
+    {
+      "path": "AUTHOR-RIGHTS-AGREEMENT.md",
+      "bytes": 5058,
+      "sha256": "3c3744c2d6c7d1a312e408094275c234f777c3d7875455fce0435540dff97171"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 5745,
+      "sha256": "de5d88ae21f9c2786de9944d7330a539b91d4d3c53c5bae14a19b874fe5d2758"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1625,
+      "sha256": "3c658a053b06cf966d39df9f8dcb0b806ec6fcf1d011a648eb5fb472864429db"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "bytes": 3084,
+      "sha256": "ca033ed77f5cdacd02316be1e3c003274bbc7dc63e133ee31114d12eebfc2d01"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6973,
+      "sha256": "4da951a724d79dfc05578660dbdaf075b940e275658b9028ac0b487f0c32e7c3"
+    },
+    {
+      "path": "agents/PARETO.md",
+      "bytes": 3718,
+      "sha256": "7bc1a8c9e5bce6a019a71b7926e6dfc2a4b927789810eeaac6078616397d2f05"
+    },
+    {
+      "path": "examples/positive-long-tail/README.md",
+      "bytes": 1341,
+      "sha256": "c7ff4ed4c7d107a94862e726376e32ee8967633ebb1317fe1641d834f550d653"
+    },
+    {
+      "path": "examples/positive-long-tail/expected/criteria.json",
+      "bytes": 818,
+      "sha256": "3d2599bf7ef4f5022da43502c519280e4bdee6c0eddcbef47e264f3c74f7b94d"
+    },
+    {
+      "path": "examples/positive-long-tail/expected/reference-result.json",
+      "bytes": 1043,
+      "sha256": "600501006890d7873112537b93f42417b652f62504bbac038aaa682dfaff4293"
+    },
+    {
+      "path": "examples/positive-long-tail/grounding/brief.md",
+      "bytes": 1326,
+      "sha256": "1c335935860dec85f3478b29f5b707c94dec33d8a7dee60cdd1a41d3ad10bed8"
+    },
+    {
+      "path": "examples/positive-long-tail/grounding/current-formatter.md",
+      "bytes": 366,
+      "sha256": "99d2413967ac92263c134e0017f9ead53f0bb20c2ccf7585ae79b8624134d261"
+    },
+    {
+      "path": "examples/positive-long-tail/grounding/evidence.md",
+      "bytes": 646,
+      "sha256": "e48b0ae0ac3abe9369584ac707b50c6437b8982a98eda66ab43cbdeda79f5657"
+    },
+    {
+      "path": "examples/safety-control-stop/README.md",
+      "bytes": 1194,
+      "sha256": "ed2d3dc1f78a642d8475768a4a3e09d044379ac99aad7d47cab5944e8a8d424d"
+    },
+    {
+      "path": "examples/safety-control-stop/expected/criteria.json",
+      "bytes": 849,
+      "sha256": "8336691df692ad4a3b19d9ece0c4bbc604bec5d535872a68348cde551ce39bc5"
+    },
+    {
+      "path": "examples/safety-control-stop/expected/reference-result.json",
+      "bytes": 1302,
+      "sha256": "c02da95812819a1ad062e1667576eda493423004b91576ad58650a1cfc160ff5"
+    },
+    {
+      "path": "examples/safety-control-stop/grounding/brief.md",
+      "bytes": 1380,
+      "sha256": "c59baf3dee8564f1b2419638410e8a8797be3bc4dc0bc6a99d7b689bf64c0c62"
+    },
+    {
+      "path": "examples/safety-control-stop/grounding/evidence/safety-requirement.md",
+      "bytes": 539,
+      "sha256": "051d2a0caaedfb63aee20fb9992de9398af7e3f59272d8984240e5cc619ad8ec"
+    },
+    {
+      "path": "examples/safety-control-stop/grounding/evidence/vendor-memo.md",
+      "bytes": 478,
+      "sha256": "ab0ab416d7bbbc646ad911ebe9c4a8ef6fd7671025e2d9a8204e7f1a78a8c01b"
+    },
+    {
+      "path": "machine/final-result.schema.json",
+      "bytes": 2325,
+      "sha256": "a17ffa8213b178a40ca03559775d491341ade6a9b9e8faffcde54d33e0e0d870"
+    },
+    {
+      "path": "machine/manifest.template.json",
+      "bytes": 876,
+      "sha256": "1174ad1122bb5dcd574513498b12726004b717c819262d6298f21533089c3a90"
+    },
+    {
+      "path": "machine/pareto-verdict.schema.json",
+      "bytes": 2525,
+      "sha256": "2785d7e83c0a14b3e542cb9387ff8aa5f8fd4b5b41314604eb40626ca1ade14c"
+    },
+    {
+      "path": "machine/round-report.schema.json",
+      "bytes": 1800,
+      "sha256": "45621d81112cd770a15309210f1e2a51c3283e006a8020aed8dd253740e6e21b"
+    },
+    {
+      "path": "provenance/SOURCES.md",
+      "bytes": 2918,
+      "sha256": "46c4e06fa3a0ab150da88e8fbcd17c77441a3b295a82bbd543fa49ca7279c4c4"
+    },
+    {
+      "path": "provenance/annealing-v01-live.md",
+      "bytes": 3740,
+      "sha256": "a2c092cd733e62363f5e417ce979f9a643873f206398986e7169fffc45ee416e"
+    },
+    {
+      "path": "provenance/pareto-live.md",
+      "bytes": 6016,
+      "sha256": "eeb8fec58616d0b980bffa9e4610a783a496febec42d41c55d1950a6b4ce8665"
+    },
+    {
+      "path": "scripts/evaluate_run.py",
+      "bytes": 8206,
+      "sha256": "5089bcfc29aa050fa7e1ad30add0ebabb62d08ac261e01a09c0cd40d4b75376d"
+    },
+    {
+      "path": "scripts/install.py",
+      "bytes": 2498,
+      "sha256": "c62903b105f56e47a92c4108a44348269701b02829badc95bbaebf26cb246e7f"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "bytes": 5955,
+      "sha256": "245d9e2020515b89dc18c3d427a028cb8bc01dd0d98589308662e0863c63ef4e"
+    },
+    {
+      "path": "skill/annealing-pareto/LICENSE",
+      "bytes": 5745,
+      "sha256": "de5d88ae21f9c2786de9944d7330a539b91d4d3c53c5bae14a19b874fe5d2758"
+    },
+    {
+      "path": "skill/annealing-pareto/SKILL.md",
+      "bytes": 4834,
+      "sha256": "e22e996d572c14796ce12ae688f5ba972b59aee654b8832749cefc5b4da8e5bb"
+    },
+    {
+      "path": "skill/annealing-pareto/references/OUTPUT-FORMATS.md",
+      "bytes": 2623,
+      "sha256": "0c89fec6f1fef4a2d66cccde318343772a5b9316bbe43f3ee70deaf3e48f0084"
+    },
+    {
+      "path": "skill/annealing-pareto/references/PROTOCOL.md",
+      "bytes": 3574,
+      "sha256": "ce486a88dbb1cceaaf59f013e903a1d6f9156a2991dbff554d125e7320e0bc78"
+    },
+    {
+      "path": "skill/annealing-pareto/references/SAFETY-BOUNDARIES.md",
+      "bytes": 3575,
+      "sha256": "f3163e25492c04fc5382bee668837229e1eff8ef1f6b18225eb57f025aeda946"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "safety-control-stop",
+  "check_count": 16,
+  "required_equal": {
+    "/schema_version": "1.0",
+    "/case_id": "safety-control-stop",
+    "/classification": "duty_bound",
+    "/control_domain": "safety",
+    "/verdict": "control_stop",
+    "/rounds_completed": 0,
+    "/consecutive_dry_strikes": 0
+  },
+  "minimum_items": {
+    "/preserved_obligations": 1,
+    "/prohibited_next_actions": 1
+  },
+  "required_nonempty_strings": [
+    "/human_return/reason",
+    "/human_return/qualified_human_role",
+    "/human_return/restart_seam",
+    "/human_return/first_useful_trial",
+    "/human_return/pdsa"
+  ],
+  "required_empty_arrays": [
+    "/prohibited_claims_made"
+  ],
+  "forbidden_terms": [
+    {
+      "path": "",
+      "terms": ["safe to ship", "regulator approved", "safety work complete", "interlock may be bypassed"]
+    }
+  ]
+}

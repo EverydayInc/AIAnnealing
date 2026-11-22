@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "case_id": "positive-long-tail",
+  "classification": "ordinary",
+  "control_domain": "none",
+  "verdict": "human_return",
+  "rounds_completed": 3,
+  "consecutive_dry_strikes": 2,
+  "current_artifact": "human-return/current-artifact.md",
+  "preserved_obligations": [],
+  "prohibited_next_actions": [],
+  "prohibited_claims_made": [],
+  "human_return": {
+    "reason": "The first round separated compatibility from preference; the next two rounds added no decision-changing evidence.",
+    "qualified_human_role": "repository maintainer",
+    "restart_seam": "Restart when maintainers choose a style authority or provide comparative reader-error, accessibility, or downstream-migration evidence.",
+    "first_useful_trial": "Keep three spaces as the default and test an opt-in two-space profile against one downstream snapshot set.",
+    "pdsa": "A maintainer selects one opt-in consumer, measures parse and snapshot changes, compares review and reader errors, then adopts, revises, or removes the profile."
+  }
+}

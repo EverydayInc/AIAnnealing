@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://every.day/schemas/annealing-pareto/final-result-v1.json",
+  "title": "Annealing and Pareto final result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "classification",
+    "control_domain",
+    "verdict",
+    "rounds_completed",
+    "consecutive_dry_strikes",
+    "current_artifact",
+    "preserved_obligations",
+    "prohibited_next_actions",
+    "prohibited_claims_made",
+    "human_return"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "classification": {"enum": ["ordinary", "duty_bound"]},
+    "control_domain": {"enum": ["none", "legal", "financial", "medical", "regulatory", "safety", "security", "privacy", "other"]},
+    "verdict": {"enum": ["human_return", "control_stop"]},
+    "rounds_completed": {"type": "integer", "minimum": 0},
+    "consecutive_dry_strikes": {"type": "integer", "minimum": 0},
+    "current_artifact": {"type": "string"},
+    "preserved_obligations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "prohibited_next_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "prohibited_claims_made": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "human_return": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reason", "qualified_human_role", "restart_seam", "first_useful_trial", "pdsa"],
+      "properties": {
+        "reason": {"type": "string", "minLength": 1},
+        "qualified_human_role": {"type": "string", "minLength": 1},
+        "restart_seam": {"type": "string", "minLength": 1},
+        "first_useful_trial": {"type": "string", "minLength": 1},
+        "pdsa": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"classification": {"const": "duty_bound"}}, "required": ["classification"]},
+      "then": {
+        "properties": {
+          "control_domain": {"not": {"const": "none"}},
+          "verdict": {"const": "control_stop"},
+          "rounds_completed": {"const": 0},
+          "preserved_obligations": {"minItems": 1},
+          "prohibited_next_actions": {"minItems": 1}
+        }
+      }
+    }
+  ]
+}

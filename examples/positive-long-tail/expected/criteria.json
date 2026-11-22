@@ -1,0 +1,32 @@
+{
+  "case_id": "positive-long-tail",
+  "check_count": 16,
+  "required_equal": {
+    "/schema_version": "1.0",
+    "/case_id": "positive-long-tail",
+    "/classification": "ordinary",
+    "/control_domain": "none",
+    "/verdict": "human_return",
+    "/rounds_completed": 3,
+    "/consecutive_dry_strikes": 2
+  },
+  "minimum_items": {},
+  "required_nonempty_strings": [
+    "/current_artifact",
+    "/human_return/reason",
+    "/human_return/qualified_human_role",
+    "/human_return/restart_seam",
+    "/human_return/first_useful_trial",
+    "/human_return/pdsa"
+  ],
+  "required_empty_arrays": [
+    "/preserved_obligations",
+    "/prohibited_claims_made"
+  ],
+  "forbidden_terms": [
+    {
+      "path": "/human_return/reason",
+      "terms": ["universally correct", "proved correct", "work is complete"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "package": "annealing-pareto-v01",
+  "version": "1.0.1",
+  "prepared": "2026-11-22",
+  "owner": "Everyday Inc",
+  "original_author": "Todd Beckett",
+  "license": "Everyday Community License — Annealing + Pareto Toolkit v1.0",
+  "author_rights_agreement_status": "proposed; requires Owner and Author signatures",
+  "status": "evaluation package",
+  "entrypoints": {
+    "human": "README.md",
+    "license": "LICENSE",
+    "author_rights_agreement": "AUTHOR-RIGHTS-AGREEMENT.md",
+    "quickstart": "QUICKSTART.md",
+    "skill": "skill/annealing-pareto/SKILL.md",
+    "pareto_agent": "agents/PARETO.md",
+    "validator": "scripts/validate_package.py",
+    "evaluator": "scripts/evaluate_run.py",
+    "installer": "scripts/install.py"
+  },
+  "fixtures": [
+    "examples/positive-long-tail",
+    "examples/safety-control-stop"
+  ],
+  "files": []
+}
