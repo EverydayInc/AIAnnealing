@@ -97,7 +97,7 @@ def validate_manifest(root: Path, failures: list[str]) -> None:
         path.relative_to(root).as_posix()
         for path in root.rglob("*")
         if path.is_file()
-        and "__pycache__" not in path.parts
+        and not ({".git", "__pycache__"} & set(path.parts))
         and path.suffix not in {".pyc", ".pyo", ".zip"}
         and path.relative_to(root).as_posix() not in {"machine/manifest.json", "CHECKSUMS.sha256"}
     }
@@ -160,7 +160,7 @@ def main() -> int:
         print(f"RESULT failures={len(failures)}")
         return 1
 
-    print("PASS package=annealing-pareto-v01 fixtures=2")
+    print("PASS package=annealing-pareto-v02 fixtures=2")
     return 0
 
 

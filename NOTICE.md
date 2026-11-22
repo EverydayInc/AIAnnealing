@@ -1,6 +1,6 @@
 # Notice
 
-**Package:** Annealing + Pareto Toolkit v01  
+**Package:** Annealing + Pareto Toolkit v02
 **Owner:** Everyday Inc  
 **Original Author:** Todd Beckett  
 **Public license:** Everyday Community License — Annealing + Pareto Toolkit v1.0  

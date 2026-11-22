@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "package": "annealing-pareto-v01",
-  "version": "1.0.1",
+  "package": "annealing-pareto-v02",
+  "version": "2.0.0",
   "prepared": "2026-11-22",
   "owner": "Everyday Inc",
   "original_author": "Todd Beckett",

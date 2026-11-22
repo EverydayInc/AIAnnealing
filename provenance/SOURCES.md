@@ -13,6 +13,8 @@ The portable package was built from live definitions in the Everyday Multica wor
 
 The portable adaptation replaces local participant names with Principal A/B, removes Multica-specific status authority, and adds explicit duty-bound circuit breakers, machine schemas, install tooling, and fixtures.
 
+Version 02 applies Todd Beckett's 2026-11-22 correction to the active package: Annealing is a pair-programming model with equal principals and rotating driver/navigator duties. No lead, master/slave, or Warden role exists. The v01 snapshot remains unchanged as provenance rather than current instruction.
+
 ## Public packaging references
 
 These sources informed package shape only. No code, templates, or prose from them is bundled.

@@ -10,7 +10,7 @@ Record:
 - whole outcome;
 - work classification;
 - source files and hashes;
-- roles, model providers/families/builds, and harness;
+- peer pair identities, rotating driver/navigator duties, model providers/families/builds, and harness;
 - maximum rounds;
 - authority boundary;
 - acceptance and falsifiers.
@@ -33,27 +33,32 @@ The brief is current reality, not a request for advocacy. Include:
 
 Hash it. Both principals receive the same bytes. Neither sees the other's opening.
 
+The principals are an equal pair. Both may originate, implement, test, challenge, and revise. Driver and navigator identify the current turn only; they do not create rank. The coordinator owns sequencing and records, not the answer. Pareto evaluates movement, not people, and cannot direct the pair.
+
+There is no lead, master/slave, or Warden role.
+
 ## 3. Independent openings
 
 Each principal writes `opening-<role>.md` plus a round-report JSON record. A complete opening covers decision, evidence, assumptions, design, alternatives, risks, reversibility, experiments, first useful piece, falsifiers, and human choices.
 
 Freeze and hash both before cross-reading.
 
-## 4. Round loop
+## 4. Pair loop
 
 For round N:
 
-1. Name the writer and reviewer. Rotate authorship.
-2. Writer reads the frozen brief, both current positions, and prior Pareto verdict.
-3. Writer states expected movement before editing.
-4. Writer creates a new complete artifact. Never edit the prior revision.
-5. Writer records movement and new evidence.
-6. Reviewer critiques the exact artifact hash. Reviewer does not edit it.
-7. Pareto compares the current and prior rounds using `agents/PARETO.md`.
-8. Coordinator validates the verdict JSON.
-9. Continue only on `continue` with non-empty expected movement.
+1. Name the driver and navigator. Rotate those duties after every completed revision.
+2. Driver reads the frozen brief, both current positions, and prior Pareto verdict.
+3. Driver states expected movement before editing.
+4. Driver creates a new complete artifact. Never edit the prior revision.
+5. Driver records movement and new evidence.
+6. Navigator critiques the exact artifact hash, tests assumptions, and names the next material movement. Navigator does not edit that frozen revision.
+7. The pair records the revision and critique as one completed round.
+8. Pareto compares the current and prior rounds using `agents/PARETO.md`.
+9. Coordinator validates the verdict JSON.
+10. Continue only on `continue` with non-empty expected movement, then swap driver and navigator duties.
 
-No round begins because an agent says “I can improve it further.” Name the dimension that will move.
+No round begins because an agent says “I can improve it further.” Name the dimension that will move. Neither principal becomes the supervisor, default maker, or permanent critic.
 
 ## 5. Dry-strike accounting
 
@@ -102,8 +107,8 @@ A new operation is useful only when at least one changes:
 
 Do not restart from “try again.”
 
-## 8. Software variant
+## 8. Software pair variant
 
-For software, each revision lives in an isolated branch/worktree or patch. The named writer runs checks. The reviewer receives the exact diff/hash and does not edit. If revision is needed, reviewer becomes the next writer.
+For software, each revision lives in an isolated branch/worktree or patch. The driver is the temporary writer and runs checks. The navigator is the temporary reviewer, receives the exact diff/hash, and does not edit that revision. Accepted findings move into the next revision after the duties swap.
 
-Neither principal nor Pareto approves, merges, deploys, or accepts risk unless separate authority explicitly grants that action.
+Both principals retain equal authority to originate, implement, test, challenge, and revise across the operation. Neither principal nor Pareto approves, merges, deploys, or accepts risk unless separate authority explicitly grants that action.

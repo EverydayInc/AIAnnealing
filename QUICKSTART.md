@@ -9,7 +9,7 @@ python3 scripts/validate_package.py .
 Expected final line:
 
 ```text
-PASS package=annealing-pareto-v01 fixtures=2
+PASS package=annealing-pareto-v02 fixtures=2
 ```
 
 ## 2. Install the skill into a disposable target
@@ -23,16 +23,16 @@ find "$target/annealing-pareto" -type f | sort
 
 The first command only prints a plan. The second copies the skill. The installer refuses to overwrite an existing destination.
 
-## 3. Configure four roles
+## 3. Configure one peer pair and two supporting roles
 
 Use your harness's equivalent of:
 
-- Coordinator/operator
-- Principal A
-- Principal B
+- Principal A and Principal B as equal pair programmers
+- Operator/coordinator for deterministic sequencing only
 - Pareto evaluator using `agents/PARETO.md`
+- Human owner for decisions and authority the pair does not hold
 
-Different model families for the two principals are preferred, not required. If only one family exists, disclose the reduced independence.
+Different model families for the two principals are preferred, not required. If only one family exists, disclose the reduced independence. Assign the first driver and navigator explicitly, then rotate those duties. Neither principal is the lead.
 
 ## 4. Run the positive case
 

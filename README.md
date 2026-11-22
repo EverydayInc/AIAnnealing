@@ -1,15 +1,15 @@
-# Annealing + Pareto Toolkit v01
+# Annealing + Pareto Toolkit v02
 
-A portable experiment for a familiar AI failure: two capable agents can keep improving an answer long after the available grounding has stopped teaching them anything.
+A portable experiment for a familiar AI failure: two capable peer agents can keep improving an answer long after the available grounding has stopped teaching them anything.
 
-Annealing changes the material through independent positions, critique, synthesis, and verification. Pareto asks whether another round can name the movement it expects to produce. If it cannot, the work returns to a human with the useful artifact, evidence, unresolved choice, and restart seam.
+Annealing is an equal-authority pair-programming model. The pair begins from independent positions, then rotates driver and navigator duties while critiquing, synthesizing, and verifying one shared artifact. Pareto asks whether another round can name the movement it expects to produce. If it cannot, the work returns to a human with the useful artifact, evidence, unresolved choice, and restart seam.
 
 > Stop hammering when the material gets cold. Do not confuse stopping model churn with completing the human obligation.
 
 ## What is inside
 
 ```text
-annealing-pareto-v01/
+annealing-pareto-v02/
 ├── README.md                         Human start here
 ├── LICENSE                           Public source-available license
 ├── AUTHOR-RIGHTS-AGREEMENT.md        Owner/Author signature agreement
@@ -34,12 +34,14 @@ annealing-pareto-v01/
 └── provenance/                       Exact live source snapshots and sources
 ```
 
-## The roles
+## The pair and supporting roles
 
-- **Operator/coordinator:** freezes grounding, records hashes, sequences rounds, and owns human return.
-- **Principal A and Principal B:** equal engineers or thinkers. Use different model families when available. Neither holds a permanent critic chair.
-- **Pareto:** evaluates movement. Pareto does not author the solution, approve it, or decide that a duty is complete.
-- **Human navigator:** supplies missing preference, authority, evidence, or a new cut. The human can accept the current artifact or restart the process with changed grounding.
+- **Principal A and Principal B:** one equal-authority pair. Both can originate, implement, test, challenge, and revise. Driver and navigator rotate; neither is the lead.
+- **Operator/coordinator:** freezes grounding, records hashes, and sequences turns. This is process plumbing, not authority over the pair or artifact.
+- **Pareto:** evaluates movement. Pareto is not a lead, manager, Warden, solution author, approver, or completion authority.
+- **Human owner:** supplies missing preference, authority, evidence, or a new cut. The human can accept the current artifact or restart the process with changed grounding.
+
+There is no master/slave relationship. There is no permanent maker/critic split. Temporary duties describe the current turn, not rank.
 
 ## When to use it
 
@@ -126,6 +128,6 @@ If the package returns transcript dumps, hides obligations, or declares the answ
 
 ## Design provenance
 
-This toolkit packages Todd Beckett's Annealing and special-use Pareto Forms as used in the Everyday Multica Pilot. `provenance/` contains the exact live definitions captured for v01 and their hashes. The installable files are portable adaptations: Principal A/B replace local agent names, and local Multica authority clauses are removed.
+This toolkit packages Todd Beckett's Annealing and special-use Pareto Forms as used in the Everyday Multica Pilot. `provenance/` preserves the exact v01 live definitions and their hashes. Version 02 corrects the active model: the principals are an equal pair, driver/navigator duties rotate, and no lead, master/slave, or Warden role exists. Principal A/B replace local agent names, and local Multica authority clauses are removed.
 
 The packaging structure borrows public patterns—not prose—from the Agent Skills specification, Anthropic's skills repository, obra/superpowers, Vercel's agent-skills, and the ASD-STE100 skill package: progressive disclosure, clear trigger boundaries, hard gates, deterministic validators, worked fixtures, pinned provenance, and clean extraction checks.
